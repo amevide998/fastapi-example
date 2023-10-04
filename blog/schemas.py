@@ -7,7 +7,7 @@ class Blog(BaseModel):
 class ShowBlog(BaseModel):
     title: str
     class Config():
-        orm_mode = True
+        from_attributes = True
         
 class User(BaseModel):
     username: str
@@ -18,4 +18,4 @@ class ShowUser(BaseModel):
     username: str
     email: str 
     class Config():
-        orm_mode = True
+        from_attributes = True
