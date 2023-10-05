@@ -35,5 +35,6 @@ def show(id: int):
 def comments(id, limit=10):
     return {"data": {"1", "2"}}
 
+#main
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
